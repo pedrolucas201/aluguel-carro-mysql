@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.rentcar.controller.CategoriaVeiculoController">
+    <Label text="Cadastro de Categorias de Veículos" />
+    <TextField fx:id="nomeCategoriaField" promptText="Nome da Categoria" />
+    <Button text="Salvar" onAction="#handleSalvarCategoria" />
+    <TableView fx:id="categoriaTable">
+        <columns>
+            <TableColumn text="ID" />
+            <TableColumn text="Nome da Categoria" />
+        </columns>
+    </TableView>
+</VBox>

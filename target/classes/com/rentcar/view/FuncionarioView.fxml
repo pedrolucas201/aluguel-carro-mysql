@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.rentcar.controller.FuncionarioController">
+    <Label text="Cadastro de Funcionários" />
+    <TextField fx:id="nomeField" promptText="Nome" />
+    <TextField fx:id="cpfField" promptText="CPF" />
+    <TextField fx:id="cargoField" promptText="Cargo" />
+    <TextField fx:id="salarioField" promptText="Salário" />
+    <Button text="Salvar" onAction="#handleSalvarFuncionario" />
+    <TableView fx:id="funcionarioTable">
+        <columns>
+            <TableColumn text="ID" />
+            <TableColumn text="Nome" />
+            <TableColumn text="CPF" />
+            <TableColumn text="Cargo" />
+        </columns>
+    </TableView>
+</VBox>

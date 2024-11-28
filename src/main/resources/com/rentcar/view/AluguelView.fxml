@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.rentcar.controller.AluguelController">
+    <Label text="Cadastro de Aluguéis" />
+    <TextField fx:id="dataInicioField" promptText="Data Início (AAAA-MM-DD)" />
+    <TextField fx:id="dataTerminoField" promptText="Data Término (AAAA-MM-DD)" />
+    <TextField fx:id="valorTotalField" promptText="Valor Total" />
+    <TextField fx:id="idClienteField" promptText="ID Cliente" />
+    <TextField fx:id="idFuncionarioField" promptText="ID Funcionário" />
+    <Button text="Salvar" onAction="#handleSalvarAluguel" />
+    <TableView fx:id="aluguelTable">
+        <columns>
+            <TableColumn text="ID" />
+            <TableColumn text="Data Início" />
+            <TableColumn text="Data Término" />
+        </columns>
+    </TableView>
+</VBox>
